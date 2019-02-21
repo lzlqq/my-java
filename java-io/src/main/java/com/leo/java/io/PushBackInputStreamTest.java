@@ -1,4 +1,4 @@
-package com.leo.java;
+package com.leo.java.io;
 
 import java.io.ByteArrayInputStream; //导入ByteArrayInputStream的包
 import java.io.IOException;
