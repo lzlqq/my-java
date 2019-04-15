@@ -15,7 +15,13 @@ public class CallableDemo implements Callable<Integer>{
         Thread.sleep(3000);
         return 1;
     }
-
+    /**
+     * Callable的底层实现类似于一个回调接口，而FutureTask类似于本例子中读取文件内容的线程实现类。
+     * 因为FutureTask实现了Runnable接口，所以它的实现类是可以多线程的，而内部就是调用了Callable接口实现类的回调方法，从而实现线程结果的返回机制
+     * @param args
+     * @throws InterruptedException
+     * @throws ExecutionException
+     */
     public static void main(String[] args) throws InterruptedException,ExecutionException{
         //创建Callable实现类的对象
         CallableDemo tc = new CallableDemo();
